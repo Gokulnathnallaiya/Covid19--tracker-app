@@ -17,20 +17,18 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
 
         };
-
-
-
         fetchAPI();
 
     }, []);
+
     const indiadata = indiaData.data
 
     if (!confirmed) {
         return "Loading...";
     }
-    var confirmpercent=(indiadata.confirmed.value*100/confirmed.value).toFixed(1)
-    var recoveredpercent=(indiadata.recovered.value*100/recovered.value).toFixed(1)
-    var deathpercent=(indiadata.deaths.value*100/deaths.value).toFixed(1)
+    var confirmpercent = (indiadata.confirmed.value * 100 / confirmed.value).toFixed(0)
+    var recoveredpercent = (indiadata.recovered.value * 100 / recovered.value).toFixed(0)
+    var deathpercent = (indiadata.deaths.value * 100 / deaths.value).toFixed(0)
 
 
 
@@ -86,7 +84,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         <CardContent>
                             <Typography color="textSecondary" gutterBottom>Deaths</Typography>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.deaths.value} duration={2} separator="," /></Typography>
-                            <Typography color="primary"><CountUp start={0} end={deathpercent} duration={4}  />%</Typography>
+                            <Typography color="primary"><CountUp start={0} end={deathpercent} duration={4} />%</Typography>
                         </CardContent>
                     </Grid>
 

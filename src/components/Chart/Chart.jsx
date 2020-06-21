@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { fetchDailyData } from "../../api";
-import { Line, Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import styles from './chart.module.css';
 const Chart = () => {
     const [dailyData, setDailyData] = useState([]);
@@ -12,7 +12,7 @@ const Chart = () => {
             
 
         };
-        console.log(dailyData)
+        
         
 
         fetchAPI();

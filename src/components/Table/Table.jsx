@@ -7,12 +7,12 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
-import TablePagination from '@material-ui/core/TablePagination';
-import TableRow from '@material-ui/core/TableRow';
 
+import TableRow from '@material-ui/core/TableRow';
 import { fetchStateData } from '../../api'
 
 const MyTable = () => {
+    // React Hooks
     const [stateData, setStateData] = useState([])
 
     useEffect(() => {
@@ -24,6 +24,8 @@ const MyTable = () => {
         FetchAPI()
 
     }, [])
+
+    /* in built styling of material UI*/
     const StyledTableCell = withStyles((theme) => ({
         head: {
             backgroundColor: theme.palette.common.black,
@@ -46,27 +48,28 @@ const MyTable = () => {
             minWidth: 100,
         },
     });
+    /*end of inbuilt styling of material UI*/
 
 
 
 
-    console.log(stateData.data)
+    
     const dataa = stateData.data
     const classes = useStyles();
 
     return (
 
-        <div style={{margin:'50px'}}>
+        <div style={{marginTop:"50px"}}>
             <TableContainer component={Paper}>
                 <Table className={classes.table} stickyHeader aria-label="sticky table">
                     <TableHead>
                         <TableRow>
                             <StyledTableCell width='100'>States</StyledTableCell>
-                            <StyledTableCell align="right" width='50'>Confirmed</StyledTableCell>
-                            <StyledTableCell align="right" width='50'>Active</StyledTableCell>
+                            <StyledTableCell align="left" width='50'>Confirmed</StyledTableCell>
+                            <StyledTableCell align="left" width='50'>Active</StyledTableCell>
 
-                            <StyledTableCell align="right" width='50'>Recovered</StyledTableCell>
-                            <StyledTableCell align="right" width='50'>Deaths</StyledTableCell>
+                            <StyledTableCell align="left" width='50'>Rcvrd</StyledTableCell>
+                            <StyledTableCell align="left" width='50'>Deaths</StyledTableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -75,10 +78,10 @@ const MyTable = () => {
                                 <StyledTableCell component="th" scope="row">
                                     {row.provinceState}
                                 </StyledTableCell>
-                                <StyledTableCell align="right">{row.confirmed}</StyledTableCell>
-                                <StyledTableCell align="right">{row.active}</StyledTableCell>
-                                <StyledTableCell align="right">{row.recovered}</StyledTableCell>
-                                <StyledTableCell align="right">{row.deaths}</StyledTableCell>
+                                <StyledTableCell align="left">{row.confirmed}</StyledTableCell>
+                                <StyledTableCell align="left">{row.active}</StyledTableCell>
+                                <StyledTableCell align="left">{row.recovered}</StyledTableCell>
+                                <StyledTableCell align="left">{row.deaths}</StyledTableCell>
 
                             </StyledTableRow>
                         ))}
