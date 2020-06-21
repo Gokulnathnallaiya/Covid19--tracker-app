@@ -3,7 +3,21 @@ body{
 }
 .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+    flex-direction: row; 
+    
+}
+.container1{
+    display: flex;
+    
+    flex-direction: column; 
+    width:50%
+    
+}
+.container2{
+    display: flex;
+    
+    flex-direction: column; 
+    width:50%
+    
 }

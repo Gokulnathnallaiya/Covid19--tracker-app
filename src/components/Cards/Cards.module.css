@@ -1,16 +1,45 @@
 .container{
-    margin:50px 0;
+    margin:50px 50px ;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    
+    
+    
+    
+    
+
+
+}
+.cardlist1{
+    margin:50px 10px ;
+    width:40%;
+    
+    
+   
+
+}
+.cardlist2{
+    margin:50px 10px ;
+    width:40%;
+    
+    
 
 }
 .card{
-    margin :0 2% !important;
+    margin :2% 2% !important;
+    
+    
 }
 .infected{
-    border-bottom: 10px solid rgba(0,0,255,0.5)
+    
+    border-bottom: 10px solid rgba(240, 185, 5, 0.979)
 }
 .recovered{
+    
     border-bottom: 10px solid rgba(0,255,0,0.5)
 }
 .deaths{
+    
     border-bottom: 10px solid rgba(255,0,0,0.5)
 }

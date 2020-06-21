@@ -35,3 +35,29 @@ export const fetchDailyData = async () => {
     }
 
 }
+export const fetchIndiaData = async () => {
+
+    try {
+        const response = await axios.get(`${url}/countries/india`);
+        return response;
+
+
+
+    } catch (error) {
+
+    }
+
+}
+export const fetchStateData = async () => {
+
+    try {
+        const response = await axios.get(`${url}/countries/india/confirmed`);
+        return response;
+
+
+
+    } catch (error) {
+
+    }
+
+}
