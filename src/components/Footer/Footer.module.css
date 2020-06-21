@@ -1,0 +1,16 @@
+.container
+{
+    background-color: #343A40;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+.footerlink{
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 10px;
+}

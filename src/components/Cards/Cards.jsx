@@ -40,21 +40,21 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 <Grid container spacing={2} justify="center" direction='column'>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.infected)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Infected</Typography>
+                            <h2 style={{ color: "#636363" }}>Total Cases</h2>
                             <Typography variant="h5"><CountUp start={0} end={confirmed.value} duration={2} separator="," /></Typography>
                             <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         </CardContent>
                     </Grid>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.recovered)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Recovered</Typography>
+                            <h2 style={{ color: "#69A469" }}>Recovered</h2>
                             <Typography variant="h5"><CountUp start={0} end={recovered.value} duration={2} separator="," /></Typography>
                             <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         </CardContent>
                     </Grid>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.deaths)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Deaths</Typography>
+                            <h2 style={{ color: "#DB6F4B" }}>Deaths</h2>
                             <Typography variant="h5"><CountUp start={0} end={deaths.value} duration={2} separator="," /></Typography>
                             <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         </CardContent>
@@ -68,21 +68,21 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 <Grid container spacing={2} justify="center" direction='column'>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.infected)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Infected</Typography>
+                            <h2 style={{ color: "#636363" }}>Total Cases</h2>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.confirmed.value} duration={2} separator="," /></Typography>
                             <Typography color="primary"><CountUp start={0} end={confirmpercent} duration={4} />%</Typography>
                         </CardContent>
                     </Grid>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.recovered)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Recovered</Typography>
+                            <h2 style={{ color: "#69A469" }}>Recovered</h2>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.recovered.value} duration={2} separator="," /></Typography>
                             <Typography color="primary"><CountUp start={0} end={recoveredpercent} duration={4} />%</Typography>
                         </CardContent>
                     </Grid>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.deaths)}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>Deaths</Typography>
+                            <h2 style={{ color: "#DB6F4B" }}>Deaths</h2>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.deaths.value} duration={2} separator="," /></Typography>
                             <Typography color="primary"><CountUp start={0} end={deathpercent} duration={4} />%</Typography>
                         </CardContent>

@@ -1,0 +1,45 @@
+.container
+{
+    background-color: #343A40;
+    width:100%;
+    display:block;
+    position: fixed;
+    
+    box-shadow: 0px 5px 5px 5px grey;
+}
+.navbar{
+    
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 8px;
+  
+  text-decoration: none;
+  font-size: 17px;
+  
+
+}
+h1:hover {
+    display: inline-block;
+    color: rgb(18, 219, 152);
+  }
+.logo{
+    
+    margin-left: 55px;
+    margin-top: 10px;
+    float:left;
+    width:40px;
+    height:40px;
+}
+.githublink{
+    float:right;
+    margin: 15px 15px;
+    color:white;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover{
+    
+    color:rgb(18, 219, 152);
+}

@@ -1,5 +1,5 @@
 .container{
-    margin:50px 50px ;
+    margin:10px 50px ;
     display:flex;
     flex-direction:row;
     width:100%;
@@ -33,13 +33,14 @@
 }
 .infected{
     
-    border-bottom: 10px solid rgba(240, 185, 5, 0.979)
+    border-bottom: 5px solid #636363
 }
 .recovered{
     
-    border-bottom: 10px solid rgba(0,255,0,0.5)
-}
+    border-bottom: 5px solid #69A469
+}                        
+
 .deaths{
     
-    border-bottom: 10px solid rgba(255,0,0,0.5)
+    border-bottom: 5px solid #DB6F4B
 }

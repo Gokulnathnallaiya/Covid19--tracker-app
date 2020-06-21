@@ -59,7 +59,7 @@ const MyTable = () => {
 
     return (
 
-        <div style={{marginTop:"50px"}}>
+        <div style={{marginTop:"100px"}}>
             <TableContainer component={Paper}>
                 <Table className={classes.table} stickyHeader aria-label="sticky table">
                     <TableHead>
