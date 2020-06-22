@@ -9,7 +9,8 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 
 import TableRow from '@material-ui/core/TableRow';
-import { fetchStateData } from '../../api'
+import { fetchStateData } from '../../api';
+import styles from './Table.module.css';
 
 const MyTable = () => {
     // React Hooks
@@ -59,8 +60,8 @@ const MyTable = () => {
 
     return (
 
-        <div style={{marginTop:"100px"}}>
-            <TableContainer component={Paper}>
+        <div className={styles.container}>
+            <TableContainer className={styles.container}component={Paper}>
                 <Table className={classes.table} stickyHeader aria-label="sticky table">
                     <TableHead>
                         <TableRow>
