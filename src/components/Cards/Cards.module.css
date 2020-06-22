@@ -1,8 +1,8 @@
 .container{
-    margin:10px 50px ;
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     width:100%;
+    
     
     
     
@@ -12,22 +12,26 @@
 
 }
 .cardlist1{
-    margin:50px 10px ;
-    width:40%;
+    
+    margin:10px 10px 10px 10px;
+    width:50%;
     
     
    
 
 }
 .cardlist2{
-    margin:50px 10px ;
-    width:40%;
+    margin:10px 10px 10px 10px;
+    width:50%;
+    
+    
     
     
 
 }
 .card{
-    margin :2% 2% !important;
+    margin :4% 4% !important;
+    
     
     
 }
