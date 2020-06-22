@@ -39,7 +39,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 <h2>Global</h2>
                 <Grid container spacing={2} justify="center" direction='column'>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.infected)}>
-                        <CardContent>
+                        <CardContent className={styles.cardContent}>
                             <h2 style={{ color: "#636363" }}>Total Cases</h2>
                             <Typography variant="h5"><CountUp start={0} end={confirmed.value} duration={2} separator="," /></Typography>
                             <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>

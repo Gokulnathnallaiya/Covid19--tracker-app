@@ -61,7 +61,7 @@ const MyTable = () => {
     return (
 
         <div className={styles.container}>
-            <TableContainer className={styles.container}component={Paper}>
+            <TableContainer component={Paper}>
                 <Table className={classes.table} stickyHeader aria-label="sticky table">
                     <TableHead>
                         <TableRow>

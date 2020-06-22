@@ -3,8 +3,9 @@
     display:flex;
     justify-content: flex-start;
     margin:0px 5px;
-    width:90%;
+    width:100%;
     align-self:center;
+    margin-top: 10vh;
   }
 
     

@@ -1,8 +1,10 @@
-.container{
+ .container{
     display:flex;
     flex-direction: row;
-    width:100%;
+    justify-content: space-between;
     margin-top: 50px;
+    margin:10px;
+    
     
     
     
@@ -13,32 +15,82 @@
 
 }
 .cardlist1{
+   
     
-    margin:10px 10px 10px 10px;
-    width:50%;
+    
+    width:50vw;
+    justify-content: space-between;
+    
+    
+
+    
+    
+   
+
+} 
+.card{
+    margin:10px;
+    margin-top: 5px;
+}
+.cardlist2{
+    
+    width:50vw; 
+    margin-left:5%;   
+    
+    
+    
+    
+
+}
+.infected{
+    border-bottom: 5px solid #636363;
+    
+}
+.recovered{
+ 
+ border-bottom: 5px solid #69A469
+}                        
+
+.deaths{
+ 
+ border-bottom: 5px solid #DB6F4B
+}
+
+/*
+.cardlist1{
+   
+    
+    
+    width:100%;
+
     
     
    
 
 }
 .cardlist2{
-    margin:10px 10px 10px 10px;
-    width:50%;
+    
+    margin-top:0px;
+    width:100%;
+    
     
     
     
     
 
 }
+
 .card{
-    margin :4% 4% !important;
+    
+    margin :2% 2% !important;
+    
+    
 
     
     
 }
 .infected{
-    
-    border-bottom: 5px solid #636363
+       border-bottom: 5px solid #636363
 }
 .recovered{
     
@@ -48,4 +100,4 @@
 .deaths{
     
     border-bottom: 5px solid #DB6F4B
-}
+} */

@@ -11,7 +11,7 @@ body{
 }
 .container1{
     display: flex;
-    
+    margin-top: 10vh;
     flex-direction: column; 
     width:50%
     
@@ -19,7 +19,7 @@ body{
 .container2{
     display: flex;
     z-index: -1;
-    
+    margin-top: 10vh;
     flex-direction: column; 
     width:50%
     
@@ -34,10 +34,11 @@ body{
     .container1{
         width:100%;
         justify-content: space-evenly;
+        margin-top:70px;
        
     }
     .container2{
-        width:90%;
+        width:100%;
         margin-right:20px;
     }
 }
