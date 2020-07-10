@@ -9,6 +9,8 @@ const navBar = () => {
                 
                     <img className={styles.logo} src={logo} alt="logo" />
                     <h1 className={styles.navbar} >COVID TRACKER</h1>
+                    <a className={styles.githublink} href="https://github.com/Gokulnathnallaiya/Covid19--tracker-app">Contact Developer</a>
+
                     <a className={styles.githublink} href="https://github.com/Gokulnathnallaiya/Covid19--tracker-app">Github Repo</a>
 
                 
