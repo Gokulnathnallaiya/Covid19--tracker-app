@@ -11,8 +11,8 @@ Visit here: https://covid-19-india.live/
 
 
 
-    Front-End  - React js,
-    Hosted using - Amazon web services 
+    Front-End  - React js
+    Hosted and deployed using - Amazon web services 
     
 **Screenshot**
 
