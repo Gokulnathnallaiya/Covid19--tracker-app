@@ -70,21 +70,21 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                         <CardContent>
                             <h2 style={{ color: "#636363" }}>Total Cases</h2>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.confirmed.value} duration={2} separator="," /></Typography>
-                            <Typography color="primary"><CountUp start={0} end={confirmpercent} duration={4} />%</Typography>
+                            <Typography color="primary"><CountUp start={0} end={confirmpercent} duration={4} />% of Global Cases</Typography>
                         </CardContent>
                     </Grid>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.recovered)}>
                         <CardContent>
                             <h2 style={{ color: "#69A469" }}>Recovered</h2>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.recovered.value} duration={2} separator="," /></Typography>
-                            <Typography color="primary"><CountUp start={0} end={recoveredpercent} duration={4} />%</Typography>
+                            <Typography color="primary"><CountUp start={0} end={recoveredpercent} duration={4} />% of Global cases</Typography>
                         </CardContent>
                     </Grid>
                     <Grid item component={Card} xs={12} md={12} className={cx(styles.card, styles.deaths)}>
                         <CardContent>
                             <h2 style={{ color: "#DB6F4B" }}>Deaths</h2>
                             <Typography variant="h5"><CountUp start={0} end={indiadata.deaths.value} duration={2} separator="," /></Typography>
-                            <Typography color="primary"><CountUp start={0} end={deathpercent} duration={4} />%</Typography>
+                            <Typography color="primary"><CountUp start={0} end={deathpercent} duration={4} />% of Global Cases</Typography>
                         </CardContent>
                     </Grid>
 
