@@ -9,6 +9,9 @@ Visit here: https://covid-19-india.live/
    
     - Growth of virus visualized using Charts
 **Tech Used**
+
+
+
     Front-End  - React js,
     Hosted using - Amazon web services 
     
