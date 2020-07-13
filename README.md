@@ -8,6 +8,8 @@ Visit here: https://track-covid-19ind.herokuapp.com/
 Tech Used
     Front-End  - React js,
     Hosted using - Amazon web services 
+    
+Screenshot
 
 ![Alt text](./src/img/tempsnip.png "Screen shot")
 
