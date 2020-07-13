@@ -2,7 +2,7 @@
 
 
 
-Visit here: https://track-covid-19ind.herokuapp.com/
+Visit here: https://covid-19-india.live/
 
     - A Covid-19 Dashboard for India as well as world.
     - New Confirmed cases,recovery rate,death rates all up date (live data).
